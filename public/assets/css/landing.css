@@ -1,0 +1,463 @@
+h1,
+h2 {
+    font-weight: 700
+}
+
+:root {
+    --bs-body-bg: #fafafb;
+    --bs-body-bg-rgb: 250, 250, 251;
+    --pc-heading-color: #343a40;
+    --pc-active-background: #e9ecef;
+    --pc-sidebar-background: #fff;
+    --pc-sidebar-color: #141414;
+    --pc-sidebar-color-rgb: 20, 20, 20;
+    --pc-sidebar-active-color: var(--bs-primary);
+    --pc-sidebar-shadow: 1px 0 0 0px rgb(240 240 240);
+    --pc-sidebar-caption-color: #495057;
+    --pc-header-background: #fff;
+    --pc-header-color: #141414;
+    --pc-header-shadow: 0 1px 0 0px rgb(240 240 240);
+    --pc-card-box-shadow: none;
+    --pc-header-submenu-background: #ffffff;
+    --pc-header-submenu-color: #6c757d
+}
+
+[data-pc-theme_contrast=true] {
+    --bs-body-bg: #ffffff;
+    --pc-sidebar-background: transparent;
+    --pc-sidebar-active-color: #1677ff;
+    --pc-sidebar-shadow: 1px 0 3px 0px #dee2e6;
+    --pc-sidebar-border: none;
+    --pc-card-box-shadow: 0px 8px 24px rgba(27, 46, 94, 0.08)
+}
+
+section {
+    padding: 100px 0
+}
+
+.title {
+    margin-bottom: 50px
+}
+
+.title h2 {
+    font-weight: 600
+}
+
+.title h5 {
+    font-weight: 500
+}
+
+.landing-page {
+    overflow-x: hidden;
+    background: #fafafb
+}
+
+@media (min-width:1600px) {
+    .landing-page .container {
+        max-width: 1200px
+    }
+}
+
+.navbar {
+    position: fixed;
+    padding: 16px 0;
+    width: 100%;
+    background: 0 0;
+    z-index: 1099;
+    top: 0
+}
+
+.navbar .nav-link {
+    color: #fff
+}
+
+.navbar .nav-link:focus,
+.navbar .nav-link:hover {
+    color: var(--bs-primary)
+}
+
+.navbar.top-nav-collapse.default {
+    background: 0 0;
+    box-shadow: none
+}
+
+.navbar.default,
+.navbar.top-nav-collapse {
+    background: #141414;
+    box-shadow: 0 8px 6px -10px rgba(0, 0, 0, .5)
+}
+
+header {
+    overflow: hidden;
+    position: relative;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: #141414
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(329.36deg, #000 14.79%, rgba(67, 67, 67, .28) 64.86%)
+}
+
+header .img-home-mokeup {
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    width: 65%;
+    right: -2%;
+    top: 8%
+}
+
+.cta-block:after,
+.footer-moke::after,
+.webapp-block::after {
+    content: "";
+    width: 100%;
+    left: 0
+}
+
+header .container {
+    position: relative;
+    z-index: 5
+}
+
+.cta-block {
+    position: relative;
+    overflow: hidden
+}
+
+.cta-block:after {
+    position: absolute;
+    height: 80%;
+    bottom: 0;
+    background: linear-gradient(transparent, #141414)
+}
+
+.cta-block .img-cta {
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.cta-block .container {
+    position: relative;
+    z-index: 5
+}
+
+.img-comp-container {
+    position: relative
+}
+
+.img-comp-container .img-comp-img {
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: hidden
+}
+
+.img-comp-container .img-comp-img.img-comp-overlay {
+    position: absolute;
+    top: 0
+}
+
+.img-comp-container .img-comp-img img {
+    width: 100vw;
+    display: block;
+    vertical-align: middle
+}
+
+.img-comp-container .img-comp-slider {
+    position: absolute;
+    z-index: 9;
+    cursor: ew-resize;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    border-radius: 50%;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0 0 7px rgba(0, 0, 0, .3)
+}
+
+.webapp-block {
+    position: relative
+}
+
+.webapp-block::after {
+    position: absolute;
+    height: 45%;
+    bottom: 0;
+    background: #141414;
+    z-index: 1
+}
+
+.webapp-block .container {
+    position: relative;
+    z-index: 5
+}
+
+.webapp-block .img-webapp-block .img-msg {
+    position: absolute;
+    top: 3%;
+    right: -17%;
+    animation: 10s linear 2s infinite normal none running slideY;
+    animation-delay: 3s
+}
+
+.webapp-block .img-webapp-block .img-widget {
+    position: absolute;
+    bottom: 20%;
+    left: -17%;
+    animation: 10s linear 2s infinite normal none running slideY
+}
+
+@keyframes slideY {
+
+    0%,
+    100%,
+    50% {
+        transform: translateY(0)
+    }
+
+    25% {
+        transform: translateY(-20px)
+    }
+
+    75% {
+        transform: translateY(20px)
+    }
+}
+
+.marquee-list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap
+}
+
+.marquee-list li {
+    margin: 0 30px;
+    opacity: .5;
+    cursor: pointer
+}
+
+.marquee-list li:hover {
+    opacity: 1
+}
+
+.client-block {
+    overflow: hidden
+}
+
+.marquee-text {
+    margin-top: 20px;
+    position: relative;
+    height: 36px;
+    display: inline-flex
+}
+
+.cust-slider {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden
+}
+
+.cust-slider::-webkit-scrollbar {
+    height: 6px;
+    opacity: 0
+}
+
+.cust-slider::-webkit-scrollbar:hover {
+    opacity: 1
+}
+
+.cust-slider::-webkit-scrollbar-track {
+    background: 0 0
+}
+
+.cust-slider::-webkit-scrollbar-thumb {
+    background: #f7f7f9
+}
+
+.cust-slider::-webkit-scrollbar-thumb:hover {
+    background: #ececf0
+}
+
+.footer-moke {
+    position: relative;
+    margin-top: 100px
+}
+
+.footer-moke::after {
+    position: absolute;
+    height: 80%;
+    bottom: -50px;
+    z-index: 3;
+    background: linear-gradient(transparent 0, #1f1f1f 70%)
+}
+
+.footer-moke .container {
+    position: relative;
+    z-index: 5
+}
+
+.footer-moke .img-footer {
+    width: 55%;
+    z-index: 1;
+    max-width: 700px;
+    position: absolute;
+    bottom: -40px;
+    right: 0
+}
+
+.pc-landing-custmizer {
+    padding: 14px;
+    position: fixed;
+    right: -100px;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #e6ebf1;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .08);
+    background: #fff;
+    transform: translateY(-50%);
+    z-index: 99;
+    transition: right .3s ease-in-out;
+    border-radius: 4px
+}
+
+.pc-landing-custmizer .color-checkbox {
+    margin-right: 0;
+    cursor: pointer
+}
+
+.pc-landing-custmizer .color-checkbox:last-child {
+    margin-bottom: 0
+}
+
+.pc-landing-custmizer .color-checkbox i {
+    font-size: 20px
+}
+
+.pc-landing-custmizer .color-checkbox input:checked+i {
+    font-size: 27.5px
+}
+
+.pc-landing-custmizer .color-checkbox>input[data-pc-value="1"]+i {
+    color: #1677ff
+}
+
+.pc-landing-custmizer .color-checkbox>input[data-pc-value="2"]+i {
+    color: #36f
+}
+
+.pc-landing-custmizer .color-checkbox>input[data-pc-value="3"]+i {
+    color: #7265e6
+}
+
+.pc-landing-custmizer .color-checkbox>input[data-pc-value="4"]+i {
+    color: #068e44
+}
+
+.pc-landing-custmizer .color-checkbox>input[data-pc-value="5"]+i {
+    color: #3c64d0
+}
+
+.pc-landing-custmizer .color-checkbox>input[data-pc-value="6"]+i {
+    color: #f27013
+}
+
+.pc-landing-custmizer .color-checkbox>input[data-pc-value="7"]+i {
+    color: #2aa1af
+}
+
+.pc-landing-custmizer .color-checkbox>input[data-pc-value="8"]+i {
+    color: #00a854
+}
+
+.pc-landing-custmizer .color-checkbox>input[data-pc-value="9"]+i {
+    color: #009688
+}
+
+.pc-landing-custmizer.active {
+    right: 15px
+}
+
+@media (max-width:991.98px) {
+    section {
+        padding: 40px 0
+    }
+
+    .cta-block:after {
+        height: 100%;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px)
+    }
+}
+
+@media (max-width:767.98px) {
+
+    .footer-moke .img-footer,
+    .webapp-block .img-webapp-block .img-msg,
+    .webapp-block .img-webapp-block .img-widget,
+    header .img-home-mokeup {
+        display: none
+    }
+
+    header {
+        text-align: center;
+        padding: 100px 0 50px
+    }
+
+    .footer-moke {
+        margin-top: 0
+    }
+}
+
+[data-pc-theme=dark] {
+    background: #121212;
+    --pc-heading-color: #fafafa;
+    --bs-heading-color: #fafafa;
+    --bs-body-color: #bfbfbf
+}
+
+[data-pc-direction=rtl] header .img-home-mokeup {
+    right: auto;
+    left: -2%
+}
+
+[data-pc-direction=rtl] .pc-landing-custmizer .color-checkbox {
+    margin-left: 0
+}
+
+[data-pc-direction=rtl] .cta-block .img-cta {
+    right: auto;
+    left: -30%
+}
+
+[data-pc-direction=rtl] .img-comp-container {
+    direction: ltr
+}
+
+[data-pc-direction=rtl] .footer-moke .img-footer {
+    right: auto;
+    left: 0
+}
