@@ -28,7 +28,7 @@
                         </i>
                     </li>
                     <li class="pc-item">
-                        <a href="{{ asset('/') }}/elements/bc_typography.html" class="pc-link">
+                        <a href="{{ route('typography') }}" class="pc-link">
                             <span class="pc-micon">
                                 <svg class="pc-icon">
                                     <use xlink:href="#font-size"></use>
@@ -38,7 +38,7 @@
                         </a>
                     </li>
                     <li class="pc-item">
-                        <a href="{{ asset('/') }}/elements/bc_color.html" class="pc-link">
+                        <a href="{{ route('color') }}" class="pc-link">
                             <span class="pc-micon">
                                 <svg class="pc-icon">
                                     <use xlink:href="#bg-colors"></use>
@@ -48,7 +48,7 @@
                         </a>
                     </li>
                     <li class="pc-item">
-                        <a href="{{ asset('/') }}/elements/icon-tabler.html" class="pc-link">
+                        <a href="{{ route('icons') }}" class="pc-link">
                             <span class="pc-micon">
                                 <svg class="pc-icon">
                                     <use xlink:href="#highlight"></use>
@@ -156,7 +156,7 @@
                         </ul>
                     </li>
                     <li class="pc-item">
-                        <a href="{{ asset('/') }}/other/sample-page.html" class="pc-link">
+                        <a href="{{ url('sample-page') }}" class="pc-link">
                             <span class="pc-micon">
                                 <svg class="pc-icon">
                                     <use xlink:href="#chrome"></use>

@@ -101,9 +101,9 @@
                 <div class="col-md-9 col-xl-6">
                     <h1 class="mt-sm-3 text-white mb-4 f-w-600 wow fadeInUp" data-wow-delay="0.2s">Carefully Crafted for
                         your
-                        <span class="text-primary">Caring React</span> Project
+                        <span class="text-primary">Caring Laravel Bootstrap 5</span> Project
                     </h1>
-                    <h5 class="mb-4 text-white opacity-75 wow fadeInUp" data-wow-delay="0.4s"> Mantis React is a
+                    <h5 class="mb-4 text-white opacity-75 wow fadeInUp" data-wow-delay="0.4s"> Mantis is a
                         blazing-fast
                         dashboard template built using the MUI React library.</h5>
                     <div class="my-5 wow fadeInUp" data-wow-delay="0.6s">
