@@ -4,6 +4,7 @@ use App\Http\Controllers\ColorController;
 use App\Http\Controllers\IconsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TypographyController;
+use Illuminate\Process\Pipe;
 use Illuminate\Support\Facades\Process;
 use Illuminate\Support\Facades\Route;
 
@@ -11,6 +12,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard', ['pageTitle' => 'Dashboard']);
@@ -25,6 +28,16 @@ Route::middleware('auth')->group(function () {
     Route::get('/typography', TypographyController::class)->name('typography');
     Route::get('/color', ColorController::class)->name('color');
     Route::get('/icons', IconsController::class)->name('icons');
+
+    Route::get('/url-login', function () {
+        $pageTitle = 'Login';
+        return view('pages.sample-page', compact('pageTitle'));
+    });
+
+    Route::get('/url-register', function () {
+        $pageTitle = 'Register';
+        return view('pages.sample-page', compact('pageTitle'));
+    });
 
     Route::get('/sample-page', function () {
         $pageTitle = 'Sample Page';

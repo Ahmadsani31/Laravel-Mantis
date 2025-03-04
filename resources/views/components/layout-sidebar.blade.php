@@ -66,7 +66,7 @@
                         </i>
                     </li>
                     <li class="pc-item">
-                        <a href="{{ asset('/') }}/pages/login.html" class="pc-link">
+                        <a href="{{ url('/url-login') }}" class="pc-link">
                             <span class="pc-micon">
                                 <svg class="pc-icon">
                                     <use xlink:href="#lock"></use>
@@ -76,7 +76,7 @@
                         </a>
                     </li>
                     <li class="pc-item">
-                        <a href="{{ asset('/') }}/pages/register.html" class="pc-link">
+                        <a href="{{ url('/url-register') }}" class="pc-link">
                             <span class="pc-micon">
                                 <svg class="pc-icon">
                                     <use xlink:href="#user-add"></use>
