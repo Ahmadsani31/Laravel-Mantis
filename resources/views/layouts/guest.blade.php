@@ -29,8 +29,7 @@
     <!-- [Material Icons] https://fonts.google.com/icons -->
     <link rel="stylesheet" href="{{ asset('/') }}assets/fonts/material.css">
     <!-- [Template CSS Files] -->
-    <link rel="stylesheet" href="{{ asset('/') }}assets/css/style.css" id="main-style-link">
-    <link rel="stylesheet" href="{{ asset('/') }}assets/css/style-preset.css">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 </head>
 <!-- [Head] end -->

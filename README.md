@@ -24,6 +24,7 @@ This repository contains a laravel 11 template that comes pre-configured with au
 - Responsive Design
 - Pre-configured Dashboard
 - Email Verification (Mailtrap)
+- Laravel Components (Blade Template)
 - Example Pages (Register, Login, Forgot password, Dashboard, Blank Page, - - Edit User Profile)
 
 ## Installation Guide
@@ -78,6 +79,8 @@ php artisan serve
 ## Contributing
 
 Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+
+Github : [Ahmadsani31](https://github.com/Ahmadsani31)
 
 ## License
 
